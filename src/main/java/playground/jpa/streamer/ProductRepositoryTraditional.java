@@ -7,7 +7,7 @@ import playground.jpa.streamer.productData.entities.Product;
 import java.util.List;
 
 @Repository
-public interface ProductRepositoryJPA extends JpaRepository<Product, Long> {
+public interface ProductRepositoryTraditional extends JpaRepository<Product, Long> {
 
     // Directly implemented by JPA Repository methods
     List<Product> findByTitle(String title);

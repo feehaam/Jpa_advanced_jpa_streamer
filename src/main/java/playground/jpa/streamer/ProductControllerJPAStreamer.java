@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("products/traditional")
-public class ProductControllerTraditional extends ProductControllerBase{
+@RequestMapping("/products/jpa-streamer")
+public class ProductControllerJPAStreamer extends ProductControllerBase{
 
-    public ProductControllerTraditional(ProductServiceTraditionalImpl productService) {
+    public ProductControllerJPAStreamer(ProductServiceJPAStreamerImpl productService) {
         super(productService);
     }
 }

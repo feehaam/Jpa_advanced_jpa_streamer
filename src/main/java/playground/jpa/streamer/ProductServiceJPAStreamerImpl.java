@@ -1,7 +1,6 @@
 package playground.jpa.streamer;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import playground.jpa.streamer.productData.entities.Product;
@@ -9,8 +8,8 @@ import playground.jpa.streamer.productData.entities.Product;
 import java.util.List;
 import java.util.Optional;
 
-@Service @Primary
-public class ProductServiceTraditionalImpl implements ProductService {
+@Service
+public class ProductServiceJPAStreamerImpl implements ProductService {
 
     @Autowired
     private ProductRepositoryTraditional productRepository;

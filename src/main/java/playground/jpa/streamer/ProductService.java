@@ -35,8 +35,7 @@ public interface ProductService {
 
     List<Product> findProductsByMultipleTags(List<String> tagNames);
 
-    // Only product id, name, price and thumbnail photo
-    Object findProductBasicInfoList();
+    Object findProductBasicInfoList(); // Only product id, name, price and thumbnail photo
 
     Object findProductAndTotalQuantityList();
 }
